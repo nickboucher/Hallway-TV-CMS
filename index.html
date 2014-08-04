@@ -1,0 +1,363 @@
+<html><head><title>Villa Madonna Academy</title><meta http-equiv='pragma' content='no-cache' />
+<meta http-equiv='cache-control' content='no-cache' /><script src='resources/jquery/jquery-1.9.1.min.js'></script><link rel='stylesheet' type='text/css' href='uploads/uploads.css'></head>
+<body>
+
+<script type="text/javascript">
+	setInterval(function(){ $.event.trigger({type:'keypress',which:40}); }, 60000);
+</script>
+
+<div id='1' class='frame' style='position:absolute; top:0; left:0; width:100%; height:100%;'><link rel='stylesheet' type='text/css' href='uploads/uploads.css'><div id='background'><img src='uploads/24.jpg' class='stretch' alt='' /></div><div id="announcements" class="resizable draggable colored announcements_24 ui-resizable ui-draggable" style="overflow: auto; width: 22.708333333333332%; height: 60.092592592592595%; left: 69.89583333333333%; top: 17.59259259259259%; position: absolute;"><div id="Announcements24">
+    		<script type="text/javascript">
+				phpemail24();
+				setInterval(phpemail24, 1200000);
+				
+				var div24 = document.getElementsByClassName("announcements_24");
+				div24 = div24[0];
+				
+				setInterval(scroll24, 50); // 50 milliseconds
+				
+				
+				function scroll24() { 
+					if (div24.scrollTop < div24.scrollHeight - div24.clientHeight){ 
+						div24.scrollTop += 1;
+					}
+					else {
+						div24.scrollTop = 0;
+					}
+				}
+				
+				function phpemail24()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsText24').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsText24">
+				No Announcements Yet!
+			</div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div><div id="calendar" class="resizable draggable colored calendar_24 ui-resizable ui-draggable" style="overflow: auto; width: 58.229166666666664%; height: 65%; left: 5.520833333333333%; top: 16.38888888888889%; position: absolute;"><div id="SchoolCalendar24">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_24');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight);
+				
+					$('#calendarContent24').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContent24'></div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div></div><div id='2' class='frame' style='position:absolute; top:0; left:0; width:100%; height:100%;'><link rel='stylesheet' type='text/css' href='uploads/uploads.css'><div id='background'><img src='uploads/cool.png' class='stretch' alt='' /></div><div id="announcements" class="resizable draggable colored announcements_cool ui-resizable ui-draggable" style="overflow: auto; width: 22.708333333333332%; height: 56.58835546475996%; left: 72.03125%; top: 9.295199182839632%; position: absolute;"><div id="Announcementscool">
+    		<script type="text/javascript">
+				phpemailcool();
+				setInterval(phpemailcool, 1200000);
+				
+				var divcool = document.getElementsByClassName("announcements_cool");
+				divcool = divcool[0];
+				
+				setInterval(scrollcool, 50); // 50 milliseconds
+				
+				
+				function scrollcool() { 
+					if (divcool.scrollTop < divcool.scrollHeight - divcool.clientHeight){ 
+						divcool.scrollTop += 1;
+					}
+					else {
+						divcool.scrollTop = 0;
+					}
+				}
+				
+				function phpemailcool()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsTextcool').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsTextcool">
+				No Announcements Yet!
+			</div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div><div id="calendar" class="resizable draggable colored calendar_cool ui-resizable ui-draggable" style="overflow: auto; width: 57.239583333333336%; height: 55.669050051072524%; position: absolute; top: 9.908069458631257%; left: 5.677083333333333%;"><div id="SchoolCalendarcool">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_cool');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight);
+				
+					$('#calendarContentcool').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContentcool'></div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div></div><div id='3' class='frame' style='position:absolute; top:0; left:0; width:100%; height:100%;'><link rel='stylesheet' type='text/css' href='uploads/uploads.css'><div id='background'><img src='uploads/desert.jpg' class='stretch' alt='' /></div><div id="announcements" class="resizable draggable colored announcements_desert ui-resizable ui-draggable" style="overflow: auto; width: 27.9296875%; height: 72.14428857715431%; left: 68.5546875%; top: 10.821643286573146%; position: absolute;"><div id="Announcementsdesert">
+    		<script type="text/javascript">
+				phpemaildesert();
+				setInterval(phpemaildesert, 1200000);
+				
+				var divdesert = document.getElementsByClassName("announcements_desert");
+				divdesert = divdesert[0];
+				
+				setInterval(scrolldesert, 50); // 50 milliseconds
+				
+				
+				function scrolldesert() { 
+					if (divdesert.scrollTop < divdesert.scrollHeight - divdesert.clientHeight){ 
+						divdesert.scrollTop += 1;
+					}
+					else {
+						divdesert.scrollTop = 0;
+					}
+				}
+				
+				function phpemaildesert()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsTextdesert').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsTextdesert">
+				No Announcements Yet!
+			</div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div><div id="calendar" class="resizable draggable colored calendar_desert ui-resizable ui-draggable" style="overflow: auto; width: 54.6875%; height: 65.13026052104209%; left: 8.69140625%; top: 18.637274549098194%; position: absolute;"><div id="SchoolCalendardesert">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_desert');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight);
+				
+					$('#calendarContentdesert').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContentdesert'></div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div></div><div id='4' class='frame' style='position:absolute; top:0; left:0; width:100%; height:100%;'><link rel='stylesheet' type='text/css' href='uploads/uploads.css'><div id='background'><img src='uploads/OrigionalDesign.png' class='stretch' alt='' /></div><div id="announcements" class="resizable draggable colored announcements_OrigionalDesign ui-resizable ui-draggable" style="overflow: auto; width: 17.708333333333336%; height: 65.92592592592592%; left: 82.23958333333333%; top: 14.629629629629628%; position: absolute; border-top-left-radius: 185px;border-bottom-left-radius: 190px;"><div id="AnnouncementsOrigionalDesign">
+    		<script type="text/javascript">
+				phpemailOrigionalDesign();
+				setInterval(phpemailOrigionalDesign, 1200000);
+				
+				var divOrigionalDesign = document.getElementsByClassName("announcements_OrigionalDesign");
+				divOrigionalDesign = divOrigionalDesign[0];
+				
+				setInterval(scrollOrigionalDesign, 50); // 50 milliseconds
+				
+				
+				function scrollOrigionalDesign() { 
+					if (divOrigionalDesign.scrollTop < divOrigionalDesign.scrollHeight - divOrigionalDesign.clientHeight){ 
+						divOrigionalDesign.scrollTop += 1;
+					}
+					else {
+						divOrigionalDesign.scrollTop = 0;
+					}
+				}
+				
+				function phpemailOrigionalDesign()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsTextOrigionalDesign').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsTextOrigionalDesign">
+				No Announcements Yet!
+			</div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div><div id="calendar" class="resizable draggable colored calendar_OrigionalDesign ui-resizable ui-draggable" style="overflow: auto; width: 67.44791666666666%; height: 58.24074074074074%; left: 5.572916666666667%; top: 17.59259259259259%; position: absolute;"><div id="SchoolCalendarOrigionalDesign">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_OrigionalDesign');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight);
+				
+					$('#calendarContentOrigionalDesign').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContentOrigionalDesign'></div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div></div><div id='5' class='frame' style='position:absolute; top:0; left:0; width:100%; height:100%;'><link rel='stylesheet' type='text/css' href='uploads/uploads.css'><div id='background'><img src='uploads/light.jpg' class='stretch' alt='' /></div><div id="announcements" class="resizable draggable colored announcements_light ui-resizable ui-draggable" style="overflow: auto; width: 25.078125%; height: 61.71875%; left: 65.859375%; top: 17.3828125%; position: absolute;"><div id="Announcementslight">
+    		<script type="text/javascript">
+				phpemaillight();
+				setInterval(phpemaillight, 1200000);
+				
+				var divlight = document.getElementsByClassName("announcements_light");
+				divlight = divlight[0];
+				
+				setInterval(scrolllight, 50); // 50 milliseconds
+				
+				
+				function scrolllight() { 
+					if (divlight.scrollTop < divlight.scrollHeight - divlight.clientHeight){ 
+						divlight.scrollTop += 1;
+					}
+					else {
+						divlight.scrollTop = 0;
+					}
+				}
+				
+				function phpemaillight()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsTextlight').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsTextlight">
+				No Announcements Yet!
+			</div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div><div id="calendar" class="resizable draggable colored calendar_light ui-resizable ui-draggable" style="overflow: auto; width: 53.359375%; height: 54.4921875%; left: 7.656250000000001%; top: 24.31640625%; position: absolute;"><div id="SchoolCalendarlight">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_light');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight);
+				
+					$('#calendarContentlight').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContentlight'></div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div></div><div id='6' class='frame' style='position:absolute; top:0; left:0; width:100%; height:100%;'><link rel='stylesheet' type='text/css' href='uploads/uploads.css'><div id='background'><img src='uploads/koala.jpg' class='stretch' alt='' /></div><div id="announcements" class="resizable draggable colored announcements_koala ui-resizable ui-draggable" style="overflow: auto; width: 28.90625%; height: 74.3228602383532%; left: 65.78125%; top: 13.001083423618635%; position: absolute;"><div id="Announcementskoala">
+    		<script type="text/javascript">
+				phpemailkoala();
+				setInterval(phpemailkoala, 1200000);
+				
+				var divkoala = document.getElementsByClassName("announcements_koala");
+				divkoala = divkoala[0];
+				
+				setInterval(scrollkoala, 50); // 50 milliseconds
+				
+				
+				function scrollkoala() { 
+					if (divkoala.scrollTop < divkoala.scrollHeight - divkoala.clientHeight){ 
+						divkoala.scrollTop += 1;
+					}
+					else {
+						divkoala.scrollTop = 0;
+					}
+				}
+				
+				function phpemailkoala()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsTextkoala').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsTextkoala">
+				No Announcements Yet!
+			</div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div><div id="calendar" class="resizable draggable colored calendar_koala ui-resizable ui-draggable" style="overflow: auto; width: 54.921875%; height: 73.02275189599133%; left: 3.75%; top: 9.100758396533044%; position: absolute;"><div id="SchoolCalendarkoala">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_koala');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight) +.01;
+				
+					$('#calendarContentkoala').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContentkoala'></div>
+</div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000;"></div></div></div><div id="loading"><div id="circleG"><div id="circleG_1" class="circleG"></div><div id="circleG_2" class="circleG"></div><div id="circleG_3" class="circleG"></div><p><b>Loading...</b></p></div></div><div id="hoverForLink"><div id="editorLink"><a href="showCreator.php" target="_self"><h2>Editor</h2></a></div></div><script type='text/javascript'>$("#hoverForLink").mouseenter(function(){$("#editorLink").animate({top: "33%"});}); $("#hoverForLink").mouseleave(function(){$("#editorLink").animate({top: "100%"});});var totalFrames = 6;var visibleFrame = 1; setTimeout(function() { for (i=1; i<=totalFrames; i++) { $("#" + i).css("display", "none"); }setInterval(switchFrame, 300000);$("#1").css("display", "block"); $("#loading").css("display", "none");},5000); function switchFrame() { $("#" + visibleFrame).css("display", "none"); if (visibleFrame == totalFrames) { visibleFrame = 1; } else { visibleFrame++; } $("#" + visibleFrame).css("display", "block"); }</script></body></html>

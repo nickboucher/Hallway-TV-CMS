@@ -1,0 +1,25 @@
+<div id="SchoolCalendarUuid32">
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
+			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
+			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<script src='resources/CalendarScripts/gcal.js'></script>
+			<script>
+				$(document).ready(function() {
+					var calendarElementsArray = document.getElementsByClassName('calendar_Uuid32');
+					var divHeight = calendarElementsArray[0].offsetHeight;
+					var divWidth = calendarElementsArray[0].offsetWidth;
+					var aspect = (divWidth / divHeight);
+				
+					$('#calendarContentUuid32').fullCalendar({
+						// Calendar Address
+						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
+						aspectRatio: aspect,
+					});
+					$(".fc-header-right").remove();
+					$(".fc-header-left").remove();
+				});
+			</script>
+			<div id='calendarContentUuid32'></div>
+</div>

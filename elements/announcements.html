@@ -1,0 +1,36 @@
+<div id="AnnouncementsUuid32">
+    		<script type="text/javascript">
+				phpemailUuid32();
+				setInterval(phpemailUuid32, 1200000);
+				
+				var divUuid32 = document.getElementsByClassName("announcements_Uuid32");
+				divUuid32 = divUuid32[0];
+				
+				setInterval(scrollUuid32, 50); // 50 milliseconds
+				
+				
+				function scrollUuid32() { 
+					if (divUuid32.scrollTop < divUuid32.scrollHeight - divUuid32.clientHeight){ 
+						divUuid32.scrollTop += 1;
+					}
+					else {
+						divUuid32.scrollTop = 0;
+					}
+				}
+				
+				function phpemailUuid32()	{
+					$.ajax({
+						method: 'get',
+						url: 'email.php',
+						success: function(data) {
+							if (data!="")	{
+								document.getElementById('AnnouncementsTextUuid32').innerHTML = data;
+							}
+						}
+					});
+				}
+			</script>
+			<div id="AnnouncementsTextUuid32">
+				No Announcements Yet!
+			</div>
+</div>
