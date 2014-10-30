@@ -10,7 +10,7 @@ $result = imap_fetch_overview($imap, "1:{$numMessages}");
 
 foreach ($result as $overview) {
 	$subject = strtolower($overview->subject);
-	if (strpos($subject,'announcements') == false) {
+	if (strpos($subject,'announcements') === false) {
 		imap_delete($imap, $overview->uid, FT_UID);
 	}
 }
