@@ -1,25 +1,29 @@
 <div id="SchoolCalendarUuid32">
-			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet' />
-			<link href='resources/CalendarScripts/fullcalendar.print.css' rel='stylesheet' media='print' />
-			<script src='resources/CalendarScripts/jquery-1.9.1.min.js'></script>
-			<script src='resources/CalendarScripts/jquery-ui-1.10.2.custom.min.js'></script>
-			<script src='resources/CalendarScripts/fullcalendar.min.js'></script>
+			<link href='resources/CalendarScripts/fullcalendar.css' rel='stylesheet'>
+			<script src='resources/CalendarScripts/jquery.min.js'></script>
+			<script src='resources/CalendarScripts/moment.min.js'></script>
+			<script src='resources/CalendarScripts/jquery-ui.custom.min.js'></script>
+			<script src='resources/CalendarScripts/fullcalendar.js'></script>
 			<script src='resources/CalendarScripts/gcal.js'></script>
-			<script>
+			
+			<script type='text/javascript'>
 				$(document).ready(function() {
-					var calendarElementsArray = document.getElementsByClassName('calendar_Uuid32');
-					var divHeight = calendarElementsArray[0].offsetHeight;
-					var divWidth = calendarElementsArray[0].offsetWidth;
-					var aspect = (divWidth / divHeight);
-				
 					$('#calendarContentUuid32').fullCalendar({
-						// Calendar Address
-						events: 'https://www.google.com/calendar/feeds/9v79qpc2patgguhskd06gu3m2s%40group.calendar.google.com/public/basic',
-						aspectRatio: aspect,
+						googleCalendarApiKey: 'AIzaSyAMb_VrNys3L65JjaitBDk82zaYWAiA8Ac', // Access within Google Dev Console
+						events: {
+							googleCalendarId: '9v79qpc2patgguhskd06gu3m2s@group.calendar.google.com' // HS Calendar
+						}
 					});
-					$(".fc-header-right").remove();
-					$(".fc-header-left").remove();
+					$(".fc-right").remove(); // remove navigation buttons
 				});
 			</script>
+			
+			<style>
+				.fc-day-grid-event > .fc-content { /* allow word wrap on events */
+					white-space: normal !important;
+				}
+			</style>
+			
+			
 			<div id='calendarContentUuid32'></div>
 </div>
