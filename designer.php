@@ -36,7 +36,7 @@
 			
 			function checkBox(element) {
 				if($("#" + element + "CheckBox").is(":checked")) {
-					$("#designer").append("<div id='" + element + "' class='resizable draggable colored " + element + "_<?php echo $_POST['name']; ?>' style='overflow:auto;width:150px; height:25px;'><b>" + element + "</b></div>");
+					$("#designer").append("<div id='" + element + "' class='resizable draggable colored " + element + "_<?php echo $_POST['name']; ?>' style='overflow:auto;width:150px; height:25px;'><b>" + element + '</b><div class="remove"><br><input type="checkbox" id="BackgroundCheckBox">Background, color=<input type="text" id="color"><br><input type="checkbox" id="RoundedCheckBox">Rounded Corners<br><input type="checkbox" id="PaddingCheckBox">Padding</div></div>');
 					$("#" + element).resizable();
 					$("#" + element).draggable();
 				} else {
@@ -49,6 +49,10 @@
 				$(element).css("height",parseInt($(element).css("height")) / $(window).height() * 100 + "%");
 				$(element).css("left",parseInt($(element).css("left")) / $(window).width() * 100 + "%");
 				$(element).css("top",parseInt($(element).css("top")) / $(window).height() * 100 + "%");
+				if ($(element + " > div > #BackgroundCheckBox").is(":checked")) $(element).css("background-color", $(element + " > div > #color").val());
+				if ($(element + " > div > #RoundedCheckBox").is(":checked")) $(element).css("border-radius", "15px");
+				if ($(element + " > div > #PaddingCheckBox").is(":checked")) $(element).css("padding", "10px");
+				$(element + "> .remove").remove();
 			}
 			
 			function submitContent() {
@@ -80,7 +84,6 @@
 					echo '<input type="checkbox" id="' . $name . 'CheckBox" onclick="checkBox(' . "'" . $name . "'" . ')">' . ucwords($name);
 				}
 			?>
-
 			<input type="button" id="btnSubmit" value="submit" onclick="submitContent()"><div id="hidden_form_container"></div>
 		</div>
 		<div id="designer"></div>
