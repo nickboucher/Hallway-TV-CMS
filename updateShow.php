@@ -15,6 +15,7 @@
 	$html .= 'var visibleFrame = 1; setTimeout(function() { for (i=1; i<=totalFrames; i++) { $("#" + i).css("display", "none"); }';
 	$html .= "setInterval(switchFrame, " . ($_POST['minutes'] * 60 * 1000) . ");";
 	$html .= '$("#1").css("display", "block"); $("#loading").css("display", "none");},5000); function switchFrame() { $("#" + visibleFrame).css("display", "none"); if (visibleFrame == totalFrames) { visibleFrame = 1; } else { visibleFrame++; } $("#" + visibleFrame).css("display", "block"); }';
+	$html .= 'setTimeout(function(){ location.reload(true); }, 43200000);';
 	$html .= "</script></body></html>";
 	file_put_contents("index.html", $html);
 	echo "Show Created Successfully!";
